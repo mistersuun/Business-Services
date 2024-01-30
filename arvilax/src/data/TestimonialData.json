@@ -1,0 +1,37 @@
+{
+    "testimonialData":[
+        {
+            "id": 1,
+            "title": "What our Client says",
+            "text1" : "Transformed our aerospace automation seamlessly.",
+            "text2" : "Their precision delivered remarkable results for our business.",
+            "text3": "Exceptional, they've been a trusted partner in innovation.",
+            "reviewer": "Thomas Flemming",
+            "design" : "(Mechanical Engineer)",
+            "img" : "/assets/img/bg/testimonial.jpg"
+
+        },
+        {
+            "id": 2,
+            "title": "What our Client says",
+            "text1" : "Grateful for your client acquisition through the website redesign.",
+            "text2" : "It's made a significant difference in my business.",
+            "text3": "Thank you for your valuable support!",
+            "reviewer": "Leah Laluz",
+            "design" : "(Lash Specialist)",
+            "img" : "/assets/img/bg/testimonial.jpg"
+
+
+        },
+        {
+            "id": 3,
+            "title": "What our Client says",
+            "text1" : "Instrumental support in growing my digital marketing business.",
+            "text2" : "Your insights and strategies have made a substantial impact.",
+            "text3": "I'm grateful for your partnership",
+            "reviewer": "Jessie Willamson",
+            "design" : "(Digital Marketing Specialist)",
+            "img" : "/assets/img/bg/testimonial.jpg"
+        }
+    ]
+}

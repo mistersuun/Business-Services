@@ -1,0 +1,42 @@
+{
+    "faq":[
+        {
+            "id":1,
+            "show":true,
+            "question": "What services does BinaryTech offer?",
+            "ans": "BinaryTech offers a range of services, including branding, project management, software development, and software delivery. We provide comprehensive solutions to enhance your online presence and efficiently manage your digital projects."
+        }, {
+            "id":2,
+            "question": "How do I get started with BinaryTech's website redesign offer",
+            "ans": "To get started with our complimentary website redesign, simply reach out to us through our contact form or our provided contact information. We'll schedule a consultation to discuss your needs and start the process."
+        }, {
+            "id":3,
+            "question": "What is the cost of BinaryTech's website redesign service?",
+            "ans": "Our website redesign service is initially free of charge. We believe in delivering value first, and once you're satisfied with the results, we'll discuss compensation."
+        }, {
+            "id":4,
+            "question": "Can BinaryTech handle branding for my business?",
+            "ans": "Yes, we specialize in branding services. We can create a unique brand identity for your business, including logo design, color schemes, messaging, and more, tailored to your brand's personality."
+        }, {
+            "id":5,
+            "question": "How does BinaryTech manage IT projects?",
+            "ans": "BinaryTech excels in project management, ensuring projects stay on track, on budget, and meet quality standards. We allocate resources efficiently, manage risks, and oversee the entire project lifecycle for successful implementation."
+        }, {
+            "id":6,
+            "question": "What types of software does BinaryTech develop?",
+            "ans": "We develop a wide range of software solutions, from custom applications to websites and more. Our development services are tailored to meet your specific business needs."
+        }, {
+            "id":7,
+            "question": "What is included in BinaryTech's software delivery services?",
+            "ans": "Our software delivery services include deploying, configuring, and supporting software solutions, ensuring they are seamlessly integrated into your IT environment. We also provide ongoing maintenance and support."
+        }, {
+            "id":8,
+            "question": "How long does it typically take to complete a website redesign with BinaryTech?",
+            "ans": "The timeline for a website redesign can vary depending on the complexity of the project and your specific requirements. We'll provide a project timeline during the initial consultation."
+        }, {
+            "id":9,
+            "question": "Is there any obligation to purchase a redesigned website from BinaryTech?",
+            "ans": "There is no obligation to purchase the redesigned website. We offer the redesign for free, and you have the final say on whether to proceed with it or not. Your satisfaction is our priority."
+        }
+    ]
+}
