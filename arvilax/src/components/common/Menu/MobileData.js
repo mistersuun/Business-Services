@@ -1,54 +1,44 @@
 const menu_data = [
-  {
+  /*{
     id: 1,
-    hasDropdown: true,
     title: 'Home',
     link: '/',
-    submenus: [
-      { title: 'Home Style 1', link: '/' },
-      { title: 'Home Style 2', link: '/home-2' },
-      { title: 'Home Style 3', link: '/home-3' },
-    ]
+  },
+  */
+  {
+    id: 1,
+    title: 'About Us',
+    link: '/about',
   },
   {
     id: 2,
-    title: 'About',
-    link: '/about',
+    title: 'Services',
+    link: '/service',
   },
   {
     id: 3,
-    hasDropdown: true,
-    title: 'Pages',
-    link: '/about',
-    submenus: [
-      { title: 'Team', link: '/team' },
-      { title: 'Team Details', link: '/team-details' },
-      { title: 'Service', link: '/service' },
-      { title: 'Service Details', link: '/service-details' },
-      { title: 'Price', link: '/price' },
-      { title: 'Contact', link: '/contact' },
-      { title: 'Faq', link: '/faq' },
-    ]
+    title: 'Portfolio',
+    link: '/portfolio',
   },
   {
     id: 4,
-    hasDropdown: true,
-    title: 'Portfolio',
-    link: '/portfolio',
-    submenus: [
-      { title: 'Portfolio', link: '/portfolio' },
-      { title: 'Portfolio Details', link: '/portfolio-details' },
-    ]
+    //hasDropdown: true,
+    title: 'Blog',
+    link: '/blog',
+    //submenus: [
+    //  { title: 'Blog', link: '/blog' },
+    //  { title: 'Blog Details', link: '/blog-details' },
+    //]
   },
   {
     id: 5,
-    hasDropdown: true,
-    title: 'Blog',
+    //hasDropdown: true,
+    title: "Let's Bloom&Rise",
     link: '/blog',
-    submenus: [
-      { title: 'Blog', link: '/blog' },
-      { title: 'Blog Details', link: '/blog-details' },
-    ]
+    //submenus: [
+    //  { title: 'Blog', link: '/blog' },
+    //  { title: 'Blog Details', link: '/blog-details' },
+    //]
   },
 ]
 

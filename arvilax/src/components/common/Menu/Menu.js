@@ -5,6 +5,9 @@ import Menus from "./Menus";
 import OffCanvas from "./OffCanvas";
 
 const Menu = ({ header_style_2 }) => {
+  const navStyle = {
+    top: '-80px'
+  } 
   const [isToggleSearch, setToggleSearch] = useState(false);
   const [isOffCanvas, setOffCanvas] = useState(false);
   const { sticky } = useSticky();
