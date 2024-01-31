@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const FooterTwo = () => {
   const [email, setEmail] = useState('');
+  const [status, setStatus] = useState(null);
 
   const subscribe = async () => {
     try {
@@ -12,10 +13,30 @@ const FooterTwo = () => {
 
       const result = await response.json();
       console.log(result);
+
+      if (response.ok) {
+        setStatus('SUCCESS');
+      } else {
+        setStatus('UNSUCCESSFUL');
+      }
+
+      // Clear email and reset status after 2 seconds
+      setTimeout(() => {
+        setEmail('');
+        setStatus(null);
+      }, 2000);
     } catch (error) {
       console.error('Error subscribing to Mailchimp:', error);
+      setStatus('UNSUCCESSFUL');
+
+      // Clear email and reset status after 2 seconds
+      setTimeout(() => {
+        setEmail('');
+        setStatus(null);
+      }, 2000);
     }
   };
+
   return (
     <footer>
       <div className="tp-footer__area black-bg">
@@ -49,16 +70,17 @@ const FooterTwo = () => {
                     <div className="tp-footer__widget tp-footer__2 footer-col-2-4  pb-30">
                       <h3 className="tp-footer__widget-title text-white">Newsletter</h3>
                       <div className="footer-form-3 mb-30">
-                      <form onSubmit={(e) => e.preventDefault()}>
-                        <input
-                          type="email"
-                          placeholder="Enter your email"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                        />
-                        <i className="fal fa-paper-plane"></i>
-                        <button onClick={subscribe}>Subscribe</button>
-                      </form>
+                        <form onSubmit={(e) => e.preventDefault()}>
+                          <input
+                            type="email"
+                            placeholder="Enter your email"
+                            value={status === 'SUCCESS' ? 'SUCCESS' : status === 'UNSUCCESSFUL' ? 'UNSUCCESSFUL' : email}
+                            style={{ color: status === 'SUCCESS' ? 'green' : status === 'UNSUCCESSFUL' ? 'red' : 'black' }}
+                            onChange={(e) => setEmail(e.target.value)}
+                          />
+                          <i className="fal fa-paper-plane"></i>
+                          <button onClick={subscribe}>Subscribe</button>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -102,15 +124,5 @@ const FooterTwo = () => {
     </footer>
   );
 };
-/* If social media
-<ul>
-  <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-  <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-  <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-  <li><a href="#"><i className="fab fa-youtube"></i></a></li>
-  <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
-</ul>
-
-*/
 
 export default FooterTwo;
