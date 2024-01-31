@@ -63,7 +63,7 @@ const GalleryHomeTwo = () => {
             <div className="col-12">
               <div className="tp-section-wrapper text-center pb-55">
                 <span className="tp-section-subtitle mb-25">
-                  OUR word gallery
+                  OUR Portfolio gallery
                 </span>
                 <h2 className="tp-section-title">Explore Our Creative Work</h2>
               </div>

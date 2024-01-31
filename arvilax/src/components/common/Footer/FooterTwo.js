@@ -1,6 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 
 const FooterTwo = () => {
+
+  const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
+
+  const subscribe = async () => {
+    try {
+      // Replace 'YOUR_MAILCHIMP_API_KEY' and 'YOUR_MAILCHIMP_LIST_ID' with your actual Mailchimp API key and list ID
+      const apiKey = 'f0220cf5c3745e81f989997e2c22e1fa-us21';
+      const listId = '2f158392d9';
+
+      const response = await axios.post(
+        `https://us21.api.mailchimp.com/3.0/lists/${listId}/members`,
+        {
+          email_address: email,
+          status: 'subscribed'
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      console.log('Successfully subscribed:', response.data);
+      setSubscribed(true);
+    } catch (error) {
+      console.error('Error subscribing to Mailchimp:', error);
+    }
+  };
   return (
     <footer>
       <div className="tp-footer__area black-bg">
@@ -34,11 +65,18 @@ const FooterTwo = () => {
                     <div className="tp-footer__widget tp-footer__2 footer-col-2-4  pb-30">
                       <h3 className="tp-footer__widget-title text-white">Newsletter</h3>
                       <div className="footer-form-3 mb-30">
-                        <form>
-                          <input type="email" placeholder="Enter your mail" />
-                          <button type="submit">Subscribe <i
-                            className="fal fa-paper-plane"></i></button>
-                        </form>
+                      <form onSubmit={(e) => e.preventDefault()}>
+                        <input
+                          type="email"
+                          placeholder="Enter your mail"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <button type="submit" onClick={subscribe} disabled={subscribed}>
+                          {subscribed ? 'Subscribed!' : 'Subscribe'}{' '}
+                          <i className="fal fa-paper-plane"></i>
+                        </button>
+                      </form>
                       </div>
                     </div>
                   </div>
