@@ -84,7 +84,7 @@ const ContactThree = () => {
                     placeholder="Enter your mail"
                   ></textarea>
                   <button type="submit" className="tp-btn-border">
-                    Send Massage
+                    Send Message
                     <span>
                       <svg
                         width="22"

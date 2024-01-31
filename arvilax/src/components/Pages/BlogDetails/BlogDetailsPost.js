@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BlogSidebar from "../Blog/BlogSidebar";
+import blog_data from "../../../data/blogData.json"
 
 const BlogDetailsPost = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const title = urlParams.get("title");
+  const blogpost = blog_data.find(
+    (item) => item.title.toLowerCase() === title.toLowerCase()
+  );  
+  console.log(blogpost.para1)
   return (
     <>
       <div className="postbox__area pt-120 pb-120">
@@ -20,62 +27,42 @@ const BlogDetailsPost = () => {
                     <div className="postbox__meta mb-25">
                       <span>
                         <Link to="/blog-details">
-                          <i className="fal fa-user"></i> Tushar
+                          <i className="fal fa-user"></i> {blogpost.author}
                         </Link>
                       </span>
                       <span>
-                        <i className="fal fa-calendar-day"></i> July 21, 2020{" "}
+                        <i className="fal fa-calendar-day"></i> {blogpost.date}{" "}
                       </span>
+                      {/*
                       <span>
                         <Link to="/blog-details">
                           <i className="fal fa-comment"></i> 02 Comments
                         </Link>
                       </span>
+                      */}
                     </div>
                     <h3 className="postbox__title mb-25">
-                      How To Develop Your Business Technology Roadmap
+                      {blogpost.title}
                     </h3>
                     <div className="postbox__text">
                       <p>
-                        Quick summary ↬ Software development without a roadmap
-                        is akin to driving off a cliff — an undertaking that
-                        seriously jeopardizes your product’s life. Here’s how to
-                        develop a business technology roadmap that ensures your
-                        project safely reaches its final destination.
+                        {blogpost.para1}
                       </p>
                       <p>
-                        When people have an idea for a piece of software or an
-                        app, they tend to be pretty energized about getting it
-                        to market as quickly as possible. It’s exciting to
-                        create an app or piece of software no one’s ever
-                        imagined or built before. As software developers, we’re
-                        usually right there with them.
+                        {blog_data.para2}
                       </p>
                       <p>
-                        At some point, though, we need to sit down with clients
-                        and give them a sometimes sobering reality: software
-                        development without a business technology roadmap can be
-                        a lot like driving aimlessly from point A to point Z.
-                        Sure, you get to discover new worlds and experience
-                        unexpected adventures, but you also frequently get lost,
-                        spend more money, and can lose enthusiasm for the
-                        journey.
+                        {blogpost.para3}
                       </p>
 
                       <h3 className="postbox__subtite mb-25">
-                        What Is A Business Technology Roadmap? #
+                        {blogpost.subtitle}
                       </h3>
                       <p>
-                        Unlike detailed blueprints that lay out all tasks,
-                        deadlines, bug reports, and more along the way,
-                        technology roadmaps are high-level visual summaries
-                        highlighting a company’s vision or plans.
+                        {blogpost.para4}
                         <br />
                         <br />
-                        In an Agile approach, a technology roadmap feeds the
-                        sprint and grooming processes, providing insight into
-                        how the product will travel from start to finish. It
-                        makes it easier for development teams to:
+                        {blogpost.para5}
                       </p>
                       <div className="row">
                         <div className="col-sm-6">
@@ -96,16 +83,13 @@ const BlogDetailsPost = () => {
                         </div>
                       </div>
                       <h3 className="postbox__subtite mb-25">
-                        How to become a top conference speaker?
+                        {blogpost.subtitle2}
                       </h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elitm sed do eiusmod tempor incididunt labore ets magna
-                        aliquatenim minim veniam quis nostrud exercitation
-                        ullamco laboris nisut aliquip ex ea commod Duis aute
-                        irure dolorn reprehenderit voluptate velit esse
+                        {blogpost.para6}
                       </p>
                     </div>
+                    {/*
                     <div className="single-blog-cloud pt-45 pb-45 tp-brand-border">
                       <div className="row align-items-center">
                         <div className="col-12">
@@ -119,8 +103,10 @@ const BlogDetailsPost = () => {
                         </div>
                       </div>
                     </div>
+                    */}
                   </div>
                 </article>
+                {/*
                 <div className="postbox__comment mb-65">
                   <h3 className="postbox__comment-title">(04) Comment</h3>
                   <ul>
@@ -272,6 +258,7 @@ const BlogDetailsPost = () => {
                     </div>
                   </form>
                 </div>
+               */}
               </div>
             </div>
             <div className="col-lg-4 col-12">

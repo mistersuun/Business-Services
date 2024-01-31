@@ -1,12 +1,12 @@
 import React from "react";
 import Brands from "../../common/Brands/Brands";
-import FooterThree from "../../common/Footer/FooterThree";
 import Menu from "../../common/Menu/Menu";
 import Testimonial from "../../common/Testimonial/Testimonial";
 //import Services from "../../HomeTwo/Services";
 import AboutBanner from "./AboutBanner";
 import AboutCompany from "./AboutCompany";
 import AboutFeature from "./AboutFeature";
+import FooterTwo from "../../common/Footer/FooterTwo";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
       <AboutFeature />
       <Testimonial />
       <Brands />
-      <FooterThree />
+      <FooterTwo />
     </>
   );
 };

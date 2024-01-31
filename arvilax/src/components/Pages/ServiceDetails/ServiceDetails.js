@@ -1,9 +1,9 @@
 import React from "react";
 import Contact from "../../common/Contact/Contact";
-import FooterThree from "../../common/Footer/FooterThree";
 import Menu from "../../common/Menu/Menu";
 import ServiceDetailsAbout from "./ServiceDetailsAbout";
 import ServiceDetailsBanner from "./ServiceDetailsBanner";
+import FooterTwo from "../../common/Footer/FooterTwo";
 
 const ServiceDetails = () => {
   return (
@@ -12,7 +12,7 @@ const ServiceDetails = () => {
       <ServiceDetailsBanner />
       <ServiceDetailsAbout />
       <Contact />
-      <FooterThree />
+      <FooterTwo />
     </>
   );
 };

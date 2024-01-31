@@ -62,6 +62,7 @@ const FooterThree = () => {
                       </ul>
                     </div>
                   </div>
+                  {/*
                   <div className="col-lg-3 col-md-6">
                     <div className="tp-footer__widget tp-footer__2  pb-30">
                       <h3 className="tp-footer__widget-title text-white">Contact</h3>
@@ -74,6 +75,7 @@ const FooterThree = () => {
                       </ul>
                     </div>
                   </div>
+                  */}
                 </div>
               </div>
             </div>

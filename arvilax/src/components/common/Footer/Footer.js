@@ -66,6 +66,7 @@ const Footer = () => {
                         </ul>
                       </div>
                     </div>
+                    
                     <div className="col-lg-3 col-md-6">
                       <div className="tp-footer__widget  pb-30">
                         <h3 className="tp-footer__widget-title">Contact</h3>

@@ -1,0 +1,97 @@
+[
+    {
+      "id": 1,
+      "title": "Using QR Codes In Your Business: Best Practices And Pitfalls",
+      "author": "Samrat Islam",
+      "category": "Business",
+      "date": "2020-03-10",
+      "commentCount": 23,
+      "para1": "Quick summary ↬ Software development without a roadmap is akin to driving off a cliff — an undertaking that seriously jeopardizes your product’s life. Here’s how to develop a business technology roadmap that ensures your project safely reaches its final destination.",
+      "para2": "When people have an idea for a piece of software or an app, they tend to be pretty energized about getting it to market as quickly as possible. It’s exciting to create an app or piece of software no one’s ever imagined or built before. As software developers, we’re usually right there with them.",
+      "para3": "At some point, though, we need to sit down with clients and give them a sometimes sobering reality: software development without a business technology roadmap can be a lot like driving aimlessly from point A to point Z. Sure, you get to discover new worlds and experience unexpected adventures, but you also frequently get lost, spend more money, and can lose enthusiasm for the journey.",
+      "subtitle": "What Is A Business Technology Roadmap? #",
+      "para4": "Unlike detailed blueprints that lay out all tasks, deadlines, bug reports, and more along the way, technology roadmaps are high-level visual summaries highlighting a company’s vision or plans.",
+      "para5": "In an Agile approach, a technology roadmap feeds the sprint and grooming processes, providing insight into how the product will travel from start to finish. It makes it easier for development teams to:",
+      "subtitle2": "How to become a top conference speaker?",
+      "para6": "Lorem ipsum dolor sit amet, consectetur adipisicing elitm sed do eiusmod tempor incididunt labore ets magna aliquatenim minim veniam quis nostrud exercitation ullamco laboris nisut aliquip ex ea commod Duis aute irure dolorn reprehenderit voluptate velit esse",
+      "content":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat […]",
+      "image": "/assets/img/blog/blog-9.jpg",
+      "format": "image"
+    },
+    {
+      "id": 2,
+      "title": "Four Ways a Clean Workplace Makes Employees Happy and Healthy",
+      "author": "Tushar",
+      "category": "Business",
+      "date": "2020-05-15",
+      "commentCount": 23,
+      "content":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat […]",
+      "image": "/assets/img/blog/blog-11.jpg",
+      "format": "video",
+      "videoId": "0gTKlztcXU0"
+    },
+    {
+      "id": 3,
+      "title": "How to Clean Your Home Faster and More Efficiently",
+      "author": "Salim",
+      "category": "Business",
+      "date": "2021-12-04",
+      "commentCount": 23,
+      "content":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat […]",
+      "image": "/assets/img/blog/blog-slider-1.jpg",
+      "format": "slider"
+    },
+    {
+      "id": 4,
+      "title": "Four Ways a Clean Workplace Makes Employees Happy and Healthy",
+      "author": "Tushar",
+      "category": "Business",
+      "date": "2020-05-15",
+      "commentCount": 23,
+      "content":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat […]",
+      "image": "/assets/img/blog/blog-11.jpg",
+      "format": "video",
+      "videoId": "0gTKlztcXU0"
+    },
+    {
+      "id": 5,
+      "title": "How to Clean Your Home Faster and More Efficiently",
+      "author": "Salim",
+      "category": "Business",
+      "date": "2021-12-04",
+      "commentCount": 23,
+      "content":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat […]",
+      "image": "/assets/img/blog/blog-slider-1.jpg",
+      "format": "slider"
+    },
+    {
+      "id": 6,
+      "title": "Four Ways a Clean Workplace Makes Employees Happy and Healthy",
+      "author": "Tushar",
+      "category": "Business",
+      "date": "2020-05-15",
+      "commentCount": 23,
+      "content":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat […]",
+      "image": "/assets/img/blog/blog-11.jpg",
+      "format": "video",
+      "videoId": "0gTKlztcXU0"
+    },
+    {
+      "id": 7,
+      "title": "How to Clean Your Home Faster and More Efficiently",
+      "author": "Salim",
+      "category": "Business",
+      "date": "2021-12-04",
+      "commentCount": 23,
+      "content":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat […]",
+      "image": "/assets/img/blog/blog-slider-1.jpg",
+      "format": "slider"
+    }
+  ]  

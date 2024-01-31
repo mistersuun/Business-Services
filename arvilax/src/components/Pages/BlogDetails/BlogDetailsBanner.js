@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import blog_data from "../../../data/blogData.json"
 
 const BlogDetailsBanner = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const title = urlParams.get("title");
+  const project = blog_data.find(
+    (item) => item.title.toLowerCase() === title.toLowerCase()
+  );
   return (
     <>
       <section
@@ -15,7 +21,7 @@ const BlogDetailsBanner = () => {
           <div className="row">
             <div className="col-xxl-12">
               <div className="breadcrumb__content text-center p-relative z-index-1">
-                <h3 className="breadcrumb__title">Blog Details</h3>
+                <h3 className="breadcrumb__title">{project.title}</h3>
                 <div className="breadcrumb__list">
                   <span>
                     <Link to="/">Home</Link>

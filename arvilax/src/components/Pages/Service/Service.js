@@ -1,12 +1,12 @@
 import React from "react";
 import Brands from "../../common/Brands/Brands";
 import Contact from "../../common/Contact/Contact";
-import Footer from "../../common/Footer/Footer";
 import Menu from "../../common/Menu/Menu";
 import Testimonial from "../../common/Testimonial/Testimonial";
 import OurService from "./OurService";
 import ServiceAbout from "./ServiceAbout";
 import ServiceBanner from "./ServiceBanner";
+import FooterTwo from "../../common/Footer/FooterTwo";
 
 const Service = () => {
   return (
@@ -18,7 +18,7 @@ const Service = () => {
       <Contact />
       <Testimonial />
       <Brands />
-      <Footer />
+      <FooterTwo />
     </>
   );
 };

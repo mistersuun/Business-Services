@@ -569,3 +569,31 @@
         padding: 30px 0;
     }
 }
+
+.link-container {
+    display: inline-block;
+    padding: 28px 4px;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: #586f7c;
+    color: #fff !important;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .link-text{
+    color: #fff !important;
+  }
+
+  .link-text:hover{
+    color: #000 !important;
+  }
+  
+  .link-container:hover {
+    background-color: #62929e;
+    color: #fff !important;
+  }

@@ -30,18 +30,6 @@ const FooterTwo = () => {
                       </ul>
                     </div>
                   </div>
-
-                  <div className="col-lg-3 col-md-6">
-                    <div className="tp-footer__widget tp-footer__2 footer-col-2-3 pb-30">
-                      <h3 className="tp-footer__widget-title text-white">Quick Links</h3>
-                      <ul>
-                        <li><a href="tel:+15142955315">(+1) 514-295-5315</a></li>
-                        <li><a href="mailto:binarytechinc@outlook.com">binarytechinc@outlook.com</a></li>
-                        <li><span> Office Hours: 7AM - 9PM</span></li>
-                        <li><span> Monday - Friday</span></li>
-                      </ul>
-                    </div>
-                  </div>
                   <div className="col-lg-3 col-md-6 ">
                     <div className="tp-footer__widget tp-footer__2 footer-col-2-4  pb-30">
                       <h3 className="tp-footer__widget-title text-white">Newsletter</h3>
@@ -52,6 +40,17 @@ const FooterTwo = () => {
                             className="fal fa-paper-plane"></i></button>
                         </form>
                       </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-6">
+                    <div className="tp-footer__widget tp-footer__2 footer-col-2-3 pb-30">
+                      <h3 className="tp-footer__widget-title text-white">Quick Links</h3>
+                      <ul>
+                        <li><a>About Us</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Let's Bloom&Rise</a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>

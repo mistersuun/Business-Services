@@ -13,9 +13,6 @@ const Menus = () => {
   return (
     <ul>
       <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
         <Link to="/about">About us</Link>
       </li>
       <li>
@@ -25,8 +22,13 @@ const Menus = () => {
         <Link to="/portfolio">Portfolio</Link>
       </li>
       <li>
-        <Link to="/FAQ">FAQ</Link>
+        <Link to="/blog">Blog</Link>
       </li>
+      <div className="link-container">
+        <li className="link-text">
+          <Link className="link-text" to="/contact">Let's Bloom&Rise</Link>
+        </li>
+      </div>
     </ul>
   );
 };

@@ -10,6 +10,7 @@ import Services from "./Services";
 import SliderHomeTwo from "./SliderHomeTwo";
 import TopCategoryHomePageTwo from "./TopCategoryHomePageTwo";
 import TopCtaAreaTwo from "./TopCtaAreaTwo";
+import LastedBlog from "./LastedBlog";
 
 const HomeTwo = () => {
   return (
@@ -22,6 +23,7 @@ const HomeTwo = () => {
       <GalleryHomeTwo />
       <Testimonial />
       <Brands />
+      <LastedBlog />
       <FullScreenBtn />
       <FooterTwo />
     </>

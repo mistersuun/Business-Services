@@ -24,7 +24,7 @@ const ContactInfo = () => {
                 </span>
                 <h3 className="ct-info__box-title">Address</h3>
                 <p className="p-0">
-                  Jacques-Cartier St, Longueuil, QC <br /> J4L 4A5, CANADA
+                N/A <br /> N/A
                 </p>
               </div>
             </div>
@@ -47,8 +47,8 @@ const ContactInfo = () => {
                 </span>
                 <h3 className="ct-info__box-title">Phone Number</h3>
                 <p className="p-0">
-                  <a href="tel:+1255-568-6523">+1 514 - 295 - 5315</a> <br />
-                  <a href="tel:+1255-568-6523">+1 255 - 568 - 6523</a>
+                  <a href="tel:+1255-568-6523">N/A</a> <br />
+                  <a href="tel:+1255-568-6523">N/A</a>
                 </p>
               </div>
             </div>
@@ -70,9 +70,9 @@ const ContactInfo = () => {
                 </span>
                 <h3 className="ct-info__box-title">Email Adress</h3>
                 <p className="p-0">
-                  <a href="mailto:binarytechinc@outlook.com">binarytechinc@outlook.com</a>{" "}
+                  <a href="mailto:binarytechinc@outlook.com">N/A</a>{" "}
                   <br />
-                   <a href="mailto:info@yourdomain.com">info@yourdomain.com</a> 
+                   <a href="mailto:info@yourdomain.com">N/A</a> 
                 </p>
               </div>
             </div>
@@ -107,11 +107,11 @@ const ContactInfo = () => {
                   />
                   <textarea
                     name="message"
-                    placeholder="Enter your Massage*"
+                    placeholder="Enter your Message*"
                   ></textarea>
                   <div className="text-center">
                     <button type="submit" className="tp-btn-border">
-                      Send Massage{" "}
+                      Send Message{" "}
                       <span>
                         <svg
                           width="22"

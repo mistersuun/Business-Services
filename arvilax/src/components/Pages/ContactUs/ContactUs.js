@@ -1,8 +1,8 @@
 import React from "react";
-import FooterThree from "../../common/Footer/FooterThree";
 import Menu from "../../common/Menu/Menu";
 import ContactInfo from "./ContactInfo";
 import ContactUsBanner from "./ContactUsBanner";
+import FooterTwo from "../../common/Footer/FooterTwo";
 
 const ContactUs = () => {
   return (
@@ -10,7 +10,7 @@ const ContactUs = () => {
       <Menu header_style_2={true} />
       <ContactUsBanner />
       <ContactInfo />
-      <FooterThree />
+      <FooterTwo />
     </>
   );
 };
