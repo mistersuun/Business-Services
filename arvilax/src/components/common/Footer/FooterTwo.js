@@ -1,33 +1,17 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const FooterTwo = () => {
-
   const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
 
   const subscribe = async () => {
     try {
-      // Replace 'YOUR_MAILCHIMP_API_KEY' and 'YOUR_MAILCHIMP_LIST_ID' with your actual Mailchimp API key and list ID
-      const apiKey = 'f0220cf5c3745e81f989997e2c22e1fa-us21';
-      const listId = '2f158392d9';
+      const response = await fetch('/.netlify/functions/subscribe', {
+        method: 'POST',
+        body: JSON.stringify({ email }),
+      });
 
-      const response = await axios.post(
-        `https://us21.api.mailchimp.com/3.0/lists/${listId}/members`,
-        {
-          email_address: email,
-          status: 'subscribed'
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${apiKey}`,
-            'Content-Type': 'application/json'
-          }
-        }
-      );
-
-      console.log('Successfully subscribed:', response.data);
-      setSubscribed(true);
+      const result = await response.json();
+      console.log(result);
     } catch (error) {
       console.error('Error subscribing to Mailchimp:', error);
     }
@@ -68,14 +52,12 @@ const FooterTwo = () => {
                       <form onSubmit={(e) => e.preventDefault()}>
                         <input
                           type="email"
-                          placeholder="Enter your mail"
+                          placeholder="Enter your email"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                         />
-                        <button type="submit" onClick={subscribe} disabled={subscribed}>
-                          {subscribed ? 'Subscribed!' : 'Subscribe'}{' '}
-                          <i className="fal fa-paper-plane"></i>
-                        </button>
+                        <i className="fal fa-paper-plane"></i>
+                        <button onClick={subscribe}>Subscribe</button>
                       </form>
                       </div>
                     </div>
