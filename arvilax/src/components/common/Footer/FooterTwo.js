@@ -75,7 +75,7 @@ const FooterTwo = () => {
                             type="email"
                             placeholder="Enter your email"
                             value={status === 'SUCCESS' ? 'SUCCESS' : status === 'UNSUCCESSFUL' ? 'UNSUCCESSFUL' : email}
-                            style={{ color: status === 'SUCCESS' ? 'green' : status === 'UNSUCCESSFUL' ? 'red' : 'black' }}
+                            style={{ color: status === 'SUCCESS' ? 'green' : status === 'UNSUCCESSFUL' ? 'red' : 'grey' }}
                             onChange={(e) => setEmail(e.target.value)}
                           />
                           <i className="fal fa-paper-plane"></i>
