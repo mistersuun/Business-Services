@@ -109,7 +109,7 @@ const FooterTwo = () => {
           <div className="row">
             <div className="col-md-8 col-12">
               <div className="tp-copyrigh-text mb-30">
-                <span>© {new Date().getFullYear()} BinaryTech - Business and Software Consulting</span>
+                <span>© {new Date().getFullYear()} Bloom&Rise - Business and Software Consulting</span>
               </div>
             </div>
             <div className="col-md-4 col-12">

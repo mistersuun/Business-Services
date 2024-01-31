@@ -66,7 +66,7 @@ const AboutCompany = () => {
                       aria-labelledby="nav-mission"
                     >
                       <p>
-                        At BinaryTech, our mission is to empower businesses with the
+                        At Bloom&Rise, our mission is to empower businesses with the
                         tools and strategies they need to succeed in the ever-evolving
                         digital landscape. We are committed to creating powerful, memorable
                         brand identities that resonate with audiences and to delivering
@@ -83,7 +83,7 @@ const AboutCompany = () => {
                         Our mission is underpinned by a passion for innovation, a commitment to customer
                         satisfaction, and a dedication to staying at the forefront of industry trends. We
                         understand that in today's fast-paced world, adaptability and creative problem-solving
-                        are key. BinaryTech is your trusted partner in achieving your digital goals. We look 
+                        are key. Bloom&Rise is your trusted partner in achieving your digital goals. We look 
                         forward to collaborating with you, understanding your unique needs, and crafting
                         solutions that will not only meet your objectives but also exceed your expectations.
                         Your success is our ultimate measure of achievement, and we're ready to embark on this
@@ -97,7 +97,7 @@ const AboutCompany = () => {
                       aria-labelledby="nav-vission-tab"
                     >
                       <p>
-                        At BinaryTech, our vision is to be a trailblazer in the world of digital transformation.
+                        At Bloom&Rise, our vision is to be a trailblazer in the world of digital transformation.
                         We aspire to be the go-to partner for businesses seeking to harness the full potential of
                         the digital age. We envision a future where every business, regardless of its size, can have
                         a powerful online presence and access top-tier software solutions. Our commitment to innovation,
@@ -109,7 +109,7 @@ const AboutCompany = () => {
                       <p>
                         Our vision centers around pioneering new standards in quality and customer satisfaction. We
                         aim to be at the forefront of emerging technologies and industry best practices, while also
-                        remaining deeply customer-centric. By adhering to these principles, BinaryTech envisions a
+                        remaining deeply customer-centric. By adhering to these principles, Bloom$Rise envisions a
                         future where businesses can confidently navigate the digital landscape, embrace change, and
                         thrive. We're dedicated to the ongoing pursuit of our vision, pushing boundaries to provide
                         our clients with the best solutions and strategies to secure their place as leaders in their

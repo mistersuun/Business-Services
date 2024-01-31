@@ -70,7 +70,7 @@ const ContactInfo = () => {
                 </span>
                 <h3 className="ct-info__box-title">Email Adress</h3>
                 <p className="p-0">
-                  <a href="mailto:binarytechinc@outlook.com">N/A</a>{" "}
+                  <a href="mailto:na@outlook.com">N/A</a>{" "}
                   <br />
                    <a href="mailto:info@yourdomain.com">N/A</a> 
                 </p>

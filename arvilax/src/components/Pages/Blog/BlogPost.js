@@ -99,12 +99,14 @@ const BlogPost = () => {
                           <i className="fal fa-calendar-day"></i>
                           {post.date}
                         </span>
+                        {/*
                         <span>
                           <Link tto={`/blog-details?title=${post.title}`}>
                             <i className="fal fa-comment"></i>
                             {post.commentCount} COMMENT
                           </Link>
                         </span>
+                        */}
                       </div>
                       <h3 className="postbox__title">
                         <Link to={`/blog-details?title=${post.title}`}>{post.title}</Link>
