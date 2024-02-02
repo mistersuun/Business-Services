@@ -1,4 +1,5 @@
 import React from "react";
+import MyComponent from "../../common/Calendly";
 
 const ContactInfo = () => {
   return (
@@ -6,6 +7,9 @@ const ContactInfo = () => {
       <div className="contact-from-section pt-140">
         <div className="container">
           <div className="row">
+            <MyComponent />
+          </div>
+          {/*
             <div className="col-lg-4">
               <div className="ct-info__box text-center pt-50 pb-50 mb-30">
                 <span className="mb-25 d-inline-block">
@@ -76,7 +80,8 @@ const ContactInfo = () => {
                 </p>
               </div>
             </div>
-          </div>
+          */}
+          
           <div className="row">
             <div className="col-12">
               <div className="tp-ct-form white-bg pl-110 pr-110 pt-80 pb-130">

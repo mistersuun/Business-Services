@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import { Route, Routes } from "react-router-dom";
 // internal
 import BackToTop from '../components/BackToTop';
@@ -18,6 +18,9 @@ import Price from '../components/Pages/Price/Price';
 import Service from '../components/Pages/Service/Service';
 import ServiceDetails from '../components/Pages/ServiceDetails/ServiceDetails';
 import TeamDetails from '../components/Pages/TeamDetails/TeamDetails';
+import NewBlogPost from '../components/Pages/Blog/NewBlogPage';
+import blogData from '../data/blogData.json'
+import MyComponent from '../components/common/Calendly';
 //import TeamPage from '../components/Pages/TeamPage/TeamPage';
 
 //Unused
@@ -25,6 +28,18 @@ import TeamDetails from '../components/Pages/TeamDetails/TeamDetails';
 //        <Route path="/home-3" element={<HomeThree />} />
 
 const AppNavigation = () => {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    // Fetch articles from the JSON file
+    setArticles(blogData);
+  }, []);
+
+  const addPost = (newPost) => {
+    // Add the new post to the articles
+    setArticles((prevArticles) => [...prevArticles, { ...newPost, id: prevArticles.length + 1 }]);
+  };
+
   return (
     <ContextProvider>
       <Routes>
@@ -41,7 +56,8 @@ const AppNavigation = () => {
         <Route path="/portfolio-details" element={<PortfolioDetails />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog-details" element={<BlogDetails />} />
-      </Routes>
+        <Route path="/new-blog-post" element={<NewBlogPost onAddPost={addPost} />} />
+        </Routes>
       <BackToTop/>
     </ContextProvider>
   );

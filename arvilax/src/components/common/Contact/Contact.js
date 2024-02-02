@@ -75,6 +75,7 @@ const Contact = () => {
             </div>
             <div className="col-lg-4">
               <div className="tp-ct-info-box black-bg">
+                {/*
                 <div className="tp-ct-info tp-ct-info-border pt-50 pl-50 pb-35">
                   <h3 className="tp-ct-info__title text-white mb-35">
                     <span>
@@ -88,6 +89,7 @@ const Contact = () => {
                     (+1) 514-295-5315
                   </p>
                 </div>
+                */}
                 <div className="tp-ct-info pt-60 pl-50 pb-35">
                   <h3 className="tp-ct-info__title text-white mb-35">
                     <span>
