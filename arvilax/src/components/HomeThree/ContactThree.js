@@ -28,7 +28,7 @@ const ContactThree = () => {
                     pellentesque eu. Sagittis purus sit
                   </p>
                   <div className="mt-50">
-                    <Link to="/service" className="tp-btn-white">
+                    <Link to="/services" className="tp-btn-white">
                       View More
                       <span>
                         <svg

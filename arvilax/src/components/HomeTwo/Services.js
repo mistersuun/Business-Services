@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import serviceData from "../../data/serviceData.json";
 
 // single service
 export function ServiceItem({ icon, title, desc }) {
@@ -48,6 +49,8 @@ export function ServiceItem({ icon, title, desc }) {
 }
 
 const Services = () => {
+  const serviceArray = serviceData;
+
   return (
     <>
       {/* <!-- service area start  --> */}
@@ -62,32 +65,16 @@ const Services = () => {
             </div>
           </div>
           <div className="row">
-            <ServiceItem
-              icon="pe-7s-arc"
-              title="Branding"
-              desc="Crafting a compelling brand identity that includes a visually appealing logo,
-               color scheme, and messaging to make your business stand out and connect with your target audience."
-            />
-            <ServiceItem
-              icon="pe-7s-cloud-download"
-              title="Management"
-              desc=" Efficiently overseeing and coordinating IT projects and resources, ensuring they are on schedule,
-               within budget, and meet quality standards for successful implementation."
-            />
-            <ServiceItem
-              icon="pe-7s-disk"
-              title="Development"
-              desc="This includes but is not limited to designing, coding, and testing software and digital solutions to meet specific business needs,
-               enhancing your digital presence and functionality."
-            />
-            <ServiceItem
-              icon="pe-7s-hammer"
-              title="Delivery"
-              desc="Implementing and maintaining software solutions by deploying, configuring, and supporting them,
-               ensuring their smooth operation and integration into your IT ecosystem."
-            />
+            {serviceArray.map((service, index) => (
+                <ServiceItem
+                  key={index}
+                  icon={service.icon}
+                  title={service.title}
+                  desc={service.desc}
+                />
+              ))}
             <div className="text-center mt-60">
-              <Link to="/service" className="tp-btn-border">
+              <Link to="/services" className="tp-btn-border">
                 All Service
                 <span>
                   <svg

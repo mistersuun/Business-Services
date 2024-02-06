@@ -98,7 +98,7 @@ const GalleryHomeTwo = () => {
         */}
         </div>
         <div className="text-center mt-60">
-          <Link to="/service" className="tp-btn-border">
+          <Link to="/services" className="tp-btn-border">
             Explore More
             <span>
               <svg

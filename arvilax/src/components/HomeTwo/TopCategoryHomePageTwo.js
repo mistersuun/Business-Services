@@ -28,7 +28,7 @@ const TopCategoryHomePageTwo = () => {
                   </p>
                   {/*
                   <div className="mt-50">
-                    <Link to="/service" className="tp-btn-white">
+                    <Link to="/services" className="tp-btn-white">
                       View More
                       <span>
                         <svg
@@ -90,7 +90,7 @@ const TopCategoryHomePageTwo = () => {
                   </p>
                   {/*
                   <div className="mt-50">
-                    <Link to="/service" className="tp-btn-border">
+                    <Link to="/services" className="tp-btn-border">
                       View More
                       <span>
                         <svg

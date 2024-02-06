@@ -70,29 +70,44 @@
     //     margin-left: 50px;
     // }
     & ul {
+        margin-left: 110px;
         & li {
             position: relative;
             list-style: none;
             display: inline-block;
-            margin: 0 35px;
+            justify-content: center;
+            margin: 0 0;
             @media #{$xs} {
                 margin-bottom: 30px;
             }
 
             @media #{$menu-xxxl} {
-                margin: 0 20px;
+                margin: 0 0;
             }
 
             @media #{$xxxl} {
-                margin: 0 18px;
+                margin: 0 0;
             }
 
             @media #{$xxl} {
-                margin: 0 15px;
+                margin: 0 0;
             }
 
             @media #{$xl} {
-                margin: 0 15px;
+                margin: 0 0;
+            }
+
+            .last-button{
+                background-color: black;
+                color: white;
+                border-radius: 24px;
+                transition: background-color 0.3s, color 0.3s;
+                cursor: pointer;
+            }
+
+            .last-button:hover{
+                background-color: #62929e;
+                color: #fff !important;
             }
 
 
@@ -100,9 +115,10 @@
                 line-height: 30px;
                 letter-spacing: 0.15em;
                 display: inline-block;
+                margin-left: 10px;
                 font-size: 15px;
                 color: var(--tp-common-white);
-                padding: 50px 0;
+                padding: 0px 5px;
                 font-weight: var(--tp-fw-normal);
                 font-family: var(--tp-ff-heading);
                 text-transform: uppercase;
@@ -164,7 +180,7 @@
                     }
 
                     & a {
-                        padding: 0px 40px;
+                        padding: 0px 0;
                         font-size: 13px;
                         position: relative;
                         z-index: 1;
@@ -178,7 +194,6 @@
                             left: auto;
                             right: 0;
                             width: 0;
-                            height: 100%;
                             background-color: var(--tp-theme-1);
                             z-index: -1;
 
@@ -527,8 +542,8 @@
     & ul{
         & li {
             a {
-                padding-top: 35px;
-                padding-bottom: 35px;
+                padding-top: 0;
+                padding-bottom: 0;
             }
         }
     }

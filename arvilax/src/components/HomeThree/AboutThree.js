@@ -23,7 +23,7 @@ const AboutThree = () => {
                   eu.
                 </p>
                 <div>
-                  <Link to="/service" className="tp-btn">
+                  <Link to="/services" className="tp-btn">
                     All Service
                     <span>
                       <svg

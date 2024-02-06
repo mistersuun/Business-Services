@@ -16,7 +16,7 @@ const Menus = () => {
         <Link to="/about">About us</Link>
       </li>
       <li>
-        <Link to="/service">Services</Link>
+        <Link to="/services">Services</Link>
       </li>
       <li>
         <Link to="/portfolio">Portfolio</Link>
@@ -24,11 +24,14 @@ const Menus = () => {
       <li>
         <Link to="/blog">Blog</Link>
       </li>
-      <div className="link-container">
+      <li className="last-button">
+        <Link to="/blog" className="last-button">Let's Bloom&Rise</Link>
+      </li>
+      {/*<div className="link-container">
         <li className="link-text">
           <Link className="link-text" to="/contact">Let's Bloom&Rise</Link>
         </li>
-      </div>
+      </div>*/}
     </ul>
   );
 };

@@ -31,7 +31,7 @@ const AboutFeature = () => {
                   </span>
                   <h3 className="tp-slider-title mb-25">
                     Make your <br />
-                    Business Boom
+                    Business Bloom
                   </h3>
 
                   <Link to="/contact" className="tp-slider-btn" tabIndex="-1">

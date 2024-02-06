@@ -47,7 +47,7 @@ const AppNavigation = () => {
         <Route path="/" element={<HomeTwo />} />
         <Route path="/about" element={<About />} />
         <Route path="/team-details" element={<TeamDetails />} />
-        <Route path="/service" element={<Service />} />
+        <Route path="/services" element={<Service />} />
         <Route path="/service-details" element={<ServiceDetails />} />
         <Route path="/price" element={<Price/>} />
         <Route path="/contact" element={<ContactUs />} />
