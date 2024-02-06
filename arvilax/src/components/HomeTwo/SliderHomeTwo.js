@@ -1,6 +1,7 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import slider2 from "../../data/SliderHomePageTwo.json";
 import Slider from "react-slick";
+import VideoPopup from "../common/Modals/VideoPopup";
 
 const settings = {
   autoplay: true,
@@ -20,6 +21,8 @@ const settings = {
 
 const SliderHomeTwo = () => {
   const sliderRef = useRef(null);
+  const [isVideoOpen,setIsVideoOpen] = useState(false);
+
   return (
     <>
       {/* <!-- slider-2 --> */}
@@ -33,6 +36,15 @@ const SliderHomeTwo = () => {
                 </div>
               ))}
             </Slider>
+            <div className="serive-vd-play d-none d-lg-block">
+                <button
+                  onClick={()=> setIsVideoOpen(true)}
+                  className="sv-popup-video"
+                >
+                  {" "}
+                  <i className="fas fa-play"></i>
+                </button>
+              </div>
           </div>
           <div className="slider-arrow-2 d-flex justify-content-between align-items-center">
             <button
@@ -57,6 +69,13 @@ const SliderHomeTwo = () => {
         </div>
       </div>
       {/* <!-- slider -2 --> */}
+      {/* video modal start */}
+      <VideoPopup
+        isVideoOpen={isVideoOpen}
+        setIsVideoOpen={setIsVideoOpen}
+        videoId={"HXgWqv9x7I0"}
+      />
+      {/* video modal end */}
     </>
   );
 };
