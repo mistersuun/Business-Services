@@ -49,7 +49,7 @@ export function ServiceItem({ icon, title, desc }) {
 }
 
 const Services = () => {
-  const serviceArray = serviceData;
+  const serviceArray = serviceData.slice(0, 4); // Slice the array to get the first 4 items
 
   return (
     <>
