@@ -29,7 +29,7 @@ const OffCanvas = ({ setOffCanvas, isOffCanvas }) => {
           <div className="offcanva-details">
             <p>
               Limitless customization options & Elementor compatibility let
-              anyone create a beautiful website with Valiance.
+              anyone create a beautiful website with BloomRise.
             </p>
           </div>
           <div className="offcanva-btn">
