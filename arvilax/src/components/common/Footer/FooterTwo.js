@@ -57,12 +57,12 @@ const FooterTwo = () => {
                   <div className="col-lg-3 col-md-6">
                     <div className="tp-footer__widget tp-footer__2 footer-col-2-2 pb-30">
                       <h3 className="tp-footer__widget-title text-white">Our Location</h3>
-                      <ul>
-                        <li><a href="#">London</a></li>
-                        <li><a href="#">America</a></li>
-                        <li><a href="#">Costa Rica</a></li>
-                        <li><a href="#">Germany</a></li>
-                        <li><a href="#">India</a></li>
+                      <ul >
+                        <li><a style={{cursor: "default"}} >London</a></li>
+                        <li><a style={{cursor: "default"}} >America</a></li>
+                        <li><a style={{cursor: "default"}} >Costa Rica</a></li>
+                        <li><a style={{cursor: "default"}} >Germany</a></li>
+                        <li><a style={{cursor: "default"}} >India</a></li>
                       </ul>
                     </div>
                   </div>
@@ -88,10 +88,10 @@ const FooterTwo = () => {
                     <div className="tp-footer__widget tp-footer__2 footer-col-2-3 pb-30">
                       <h3 className="tp-footer__widget-title text-white">Quick Links</h3>
                       <ul>
-                        <li><a>About Us</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Let's Bloom&Rise</a></li>
+                        <li><a href='/about'>About Us</a></li>
+                        <li><a href='/services'>Services</a></li>
+                        <li><a href='/portfolio'>Portfolio</a></li>
+                        <li><a href='/contact'>Let's Bloom&Rise</a></li>
                       </ul>
                     </div>
                   </div>
