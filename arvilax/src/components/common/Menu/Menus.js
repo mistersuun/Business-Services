@@ -25,7 +25,7 @@ const Menus = () => {
         <Link to="/blog">Blog</Link>
       </li>
       <li className="last-button">
-        <Link to="/blog" className="last-button">Let's Bloom&Rise</Link>
+        <Link to="/contact" className="last-button">Let's Bloom&Rise</Link>
       </li>
       {/*<div className="link-container">
         <li className="link-text">

@@ -25,7 +25,7 @@ const MobileMenu = () => {
                 <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <Link to="/blog">Let's Bloom&Rise</Link>
+                <Link to="/contact">Let's Bloom&Rise</Link>
               </li>
               {/*<div className="link-container">
                 <li className="link-text">
