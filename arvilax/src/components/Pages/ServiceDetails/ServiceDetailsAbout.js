@@ -81,7 +81,7 @@ const ServiceDetailsAbout = () => {
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"0gTKlztcXU0"}
+        videoId={"HXgWqv9x7l0"}
       />
       {/* video modal end */}
     </>
