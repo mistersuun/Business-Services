@@ -1,7 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import MyComponent from "../../common/Calendly";
 
 const ContactInfo = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState(null);
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/.netlify/functions/contact', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      console.log(result);
+
+      if (response.ok) {
+        setStatus('SUCCESS');
+      } else {
+        setStatus('UNSUCCESSFUL');
+      }
+
+      // Clear form and reset status after 2 seconds
+      setTimeout(() => {
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+        setStatus(null);
+      }, 2000);
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      setStatus('UNSUCCESSFUL');
+
+      // Clear form and reset status after 2 seconds
+      setTimeout(() => {
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+        setStatus(null);
+      }, 2000);
+    }
+  };
   return (
     <>
       <div className="contact-from-section pt-140">
@@ -85,34 +132,44 @@ const ContactInfo = () => {
           <div className="row">
             <div className="col-12">
               <div className="tp-ct-form white-bg pl-110 pr-110 pt-80 pb-130">
-                <form id="contact-form" action="assets/mail.php" method="POST">
+                <form onSubmit={handleSubmit}>
                   <input
                     type="text"
                     name="name"
                     placeholder="Enter your name*"
                     required
+                    value={formData.name}
+                    onChange={handleInputChange}
                   />
                   <input
                     type="email"
                     name="email"
                     placeholder="Your email here*"
                     required
+                    value={formData.email}
+                    onChange={handleInputChange}
                   />
                   <input
                     type="text"
                     name="phone"
                     placeholder="Enter your number*"
                     required
+                    value={formData.phone}
+                    onChange={handleInputChange}
                   />
                   <input
                     type="text"
                     name="subject"
                     placeholder="Subject*"
                     required
+                    value={formData.subject}
+                    onChange={handleInputChange}
                   />
                   <textarea
                     name="message"
                     placeholder="Enter your Message*"
+                    value={formData.message}
+                    onChange={handleInputChange}
                   ></textarea>
                   <div className="text-center">
                     <button type="submit" className="tp-btn-border">
@@ -146,7 +203,12 @@ const ContactInfo = () => {
                     </button>
                   </div>
                 </form>
-                <p className="ajax-response mt-20 text-center"></p>
+                {status === 'SUCCESS' && (
+                  <p className="ajax-response mt-20 text-center text-success">Form submitted successfully!</p>
+                )}
+                {status === 'UNSUCCESSFUL' && (
+                  <p className="ajax-response mt-20 text-center text-danger">Form submission failed. Please try again.</p>
+                )}
               </div>
             </div>
           </div>

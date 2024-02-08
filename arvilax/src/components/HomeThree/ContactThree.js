@@ -1,7 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const ContactThree = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState(null);
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/.netlify/functions/contact', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      console.log(result);
+
+      if (response.ok) {
+        setStatus('SUCCESS');
+      } else {
+        setStatus('UNSUCCESSFUL');
+      }
+
+      // Clear form and reset status after 2 seconds
+      setTimeout(() => {
+        setFormData({ name: "", email: "", message: "" });
+        setStatus(null);
+      }, 2000);
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      setStatus('UNSUCCESSFUL');
+
+      // Clear form and reset status after 2 seconds
+      setTimeout(() => {
+        setFormData({ name: "", email: "", message: "" });
+        setStatus(null);
+      }, 2000);
+    }
+  };
   return (
     <>
       {/* <!-- contact area start --> */}
@@ -66,22 +112,28 @@ const ContactThree = () => {
                 <h4 className="tp-contact-form-title">
                   <i className="fal fa-file-edit"></i>Online Contact
                 </h4>
-                <form action="#">
+                <form onSubmit={handleSubmit}>
                   <input
                     type="text"
                     name="name"
                     placeholder="Enter your name"
+                    value={formData.name}
+                    onChange={handleInputChange}
                   />
                   <br />
                   <input
                     type="email"
                     name="email"
                     placeholder="Enter your mail"
+                    value={formData.email}
+                    onChange={handleInputChange}
                   />
                   <br />
                   <textarea
                     name="message"
-                    placeholder="Enter your mail"
+                    placeholder="Enter your message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                   ></textarea>
                   <button type="submit" className="tp-btn-border">
                     Send Message
@@ -112,6 +164,12 @@ const ContactThree = () => {
                       </svg>
                     </span>
                   </button>
+                  {status === 'SUCCESS' && (
+                    <p className="text-success">Form submitted successfully!</p>
+                  )}
+                  {status === 'UNSUCCESSFUL' && (
+                    <p className="text-danger">Form submission failed. Please try again.</p>
+                  )}
                 </form>
               </div>
             </div>
