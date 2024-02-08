@@ -4,8 +4,10 @@ exports.handler = async function (event, context) {
   const { email } = JSON.parse(event.body);
 
   try {
+    console.log(process.env.MAILCHIMP_API_KEY);
+      console.log(email)
     const response = await axios.post(
-      `https://us21.api.mailchimp.com/3.0/lists/2f158392d9/members`,
+      `https://us21.api.mailchimp.com/3.0/lists/4826270621/members`,
       {
         email_address: email,
         status: 'subscribed',

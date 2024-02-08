@@ -5,7 +5,7 @@ const Calendly = () => {
   return (
     <div>
       <h2>Schedule a meeting</h2>
-      <InlineWidget url="https://calendly.com/souleydop/discovery-call" />
+      <InlineWidget url="https://calendly.com/bloomrise/contact" />
     </div>
   );
 };

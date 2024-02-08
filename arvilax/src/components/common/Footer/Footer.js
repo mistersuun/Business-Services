@@ -72,7 +72,7 @@ const Footer = () => {
                         <h3 className="tp-footer__widget-title">Contact</h3>
                         <ul>
                         <li><a href="tel:+15142955315">(+1) 514-295-5315</a></li>
-                        <li><a href="mailto:binarytechinc@outlook.com">binarytechinc@outlook.com</a></li>
+                        <li><a href="mailto:contact@bloomrise.ca">contact@bloomrise.ca</a></li>
                         <li><span> Office Hours: 7AM - 9PM</span></li>
                         <li><span> Monday - Friday</span></li>
                         </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-8 col-12">
                 <div className="tp-copyrigh-text mb-30">
-                <span>© {new Date().getFullYear()} BinaryTech - Business and Software Consulting</span>
+                <span>© {new Date().getFullYear()} BloomRise - Business and Software Consulting</span>
                 </div>
               </div>
               <div className="col-md-4 col-12">
